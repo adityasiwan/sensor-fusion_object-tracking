@@ -1,15 +1,51 @@
-# Writeup: Track 3D-Objects Over Time
+## 3D Object Detection
 
-Please use this starter template to answer the following questions:
+### Range Image
 
-### 1. Write a short recap of the four tracking steps and what you implemented there (filter, track management, association, camera fusion). Which results did you achieve? Which part of the project was most difficult for you to complete, and why?
-
-
-### 2. Do you see any benefits in camera-lidar fusion compared to lidar-only tracking (in theory and in your concrete results)? 
+![range_image](./img/range_image.png)
 
 
-### 3. Which challenges will a sensor fusion system face in real-life scenarios? Did you see any of these challenges in the project?
+### Point Cloud
+
+![image 1](./img/point_cloud/1.png)
+
+![image 2](./img/point_cloud/2.png)
+
+![image 3](./img/point_cloud/3.png)
+
+![image 4](./img/point_cloud/4.png)
+
+![image 5](./img/point_cloud/5.png)
+
+![image 6](./img/point_cloud/6.png)
+
+![image 7](./img/point_cloud/7.png)
+
+![image 8](./img/point_cloud/8.png)
+
+![image 9](./img/point_cloud/9.png)
+
+![image 10](./img/point_cloud/10.png)
+
+### Intensity Layer
+
+![intnsity_layer](./img/intensity.png)
 
 
-### 4. Can you think of ways to improve your tracking results in the future?
+### Height Layer
 
+![height_layer](./img/height.png)
+
+### Labels vs detected Object
+
+![labels_detected](./img/labels_detected.png)
+
+![labels_detected1](./img/labels_detected1.png)
+
+### Detection performance
+
+![det_eval](./img/Figure_act_detection.png)
+
+![precision_recall](./img/precision_recall.png)
+
+![actual_eval](./img/Figure_ground_truth_perfect.png)
