@@ -5,7 +5,9 @@
 ![range_image](./img/range_image.png)
 
 
-### Point Cloud
+### BEV Map Visualization
+
+Below are various examples of vehicles with varying degrees of visibility in the point-cloud
 
 ![image 1](./img/point_cloud/1.png)
 
@@ -27,6 +29,9 @@
 
 ![image 10](./img/point_cloud/10.png)
 
+From the point clouds, stable features that appear on most of the vehicles can be identified such as rear-bumper, tail-lights, windshield and vehicle roof. Interestingly, the point cloud also captures intersections and vehicles standing in the parking lot as seen in some of the point clouds above and the vehicles standing in the parking lot also possesses the same set of stable features mentioned before.
+
+
 ### Intensity Layer
 
 ![intnsity_layer](./img/intensity.png)
@@ -36,13 +41,13 @@
 
 ![height_layer](./img/height.png)
 
-### Labels vs detected Object
+### Model-based Object Detection in BEV Image
 
 ![labels_detected](./img/labels_detected.png)
 
 ![labels_detected1](./img/labels_detected1.png)
 
-### Detection performance
+### Performance Evaluation for Object Detection
 
 ![det_eval](./img/Figure_act_detection.png)
 
