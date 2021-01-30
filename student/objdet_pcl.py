@@ -136,12 +136,10 @@ def bev_from_pcl(lidar_pcl, configs):
     # step 3 : perform the same operation as in step 2 for the y-coordinates but make sure that no negative bev-coordinates occur
     lidar_pcl_cpy[:, 1] = np.int_(np.floor(lidar_pcl_cpy[:, 1] / bev_discreet) + (configs.bev_width + 1) / 2)
     # step 4 : visualize point-cloud using the function show_pcl from a previous task
-    #show_pcl(lidar_pcl_cpy)
+    show_pcl(lidar_pcl_cpy)
+    ####### ID_S2_EX1 END #######
 
-    #######
-    ####### ID_S2_EX1 END #######     
-    
-    
+
     # Compute intensity layer of the BEV map
     ####### ID_S2_EX2 START #######     
     #######
@@ -166,8 +164,8 @@ def bev_from_pcl(lidar_pcl, configs):
                 np.amax(lidar_pcl_top[:, 3]) - np.amin(lidar_pcl_top[:, 3]))
 
     ## step 5 : temporarily visualize the intensity map using OpenCV to make sure that vehicles separate well from the background
-    #cv2.imshow('intensity channel', (intensity_map * 255).astype(np.uint8))
-    #cv2.waitKey(0)
+    cv2.imshow('intensity channel', (intensity_map * 255).astype(np.uint8))
+    cv2.waitKey(0)
     #######
     ####### ID_S2_EX2 END ####### 
 
@@ -187,8 +185,8 @@ def bev_from_pcl(lidar_pcl, configs):
         np.abs(configs.lim_z[1] - configs.lim_z[0]))
 
     ## step 3 : temporarily visualize the intensity map using OpenCV to make sure that vehicles separate well from the background
-    #cv2.imshow('height channel', (height_map * 255).astype(np.uint8))
-    #cv2.waitKey(0)
+    cv2.imshow('height channel', (height_map * 255).astype(np.uint8))
+    cv2.waitKey(0)
     #######
     ####### ID_S2_EX3 END #######       
 

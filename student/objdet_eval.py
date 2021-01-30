@@ -120,7 +120,10 @@ def compute_performance_stats(det_performance_all):
     print('student task ID_S4_EX3')
 
     ## step 1 : extract the total number of positives, true positives, false negatives and false positives
-    all_positives, true_positives, false_negatives, false_positives = np.array(pos_negs).sum(axis=0)
+    positives = np.array(pos_negs).sum(axis=0)[0]
+    true_positives = np.array(pos_negs).sum(axis=0)[1]
+    false_negatives = np.array(pos_negs).sum(axis=0)[2]
+    false_positives = np.array(pos_negs).sum(axis=0)[3]
 
     ## step 2 : compute precision
     precision = true_positives / (true_positives + false_positives)
